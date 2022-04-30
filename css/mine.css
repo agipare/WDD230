@@ -6,6 +6,8 @@
 
 body {
   font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  align-items: center;
 }
 
 header,
@@ -13,6 +15,7 @@ main,
 footer {
   max-width: 800px;
   margin: 0 auto;
+  align-items: center;
 }
 
 header {
@@ -29,7 +32,6 @@ main ul {
   margin: 1em auto;
   border: 2px solid #ccc;
   align-items: center;
-  
 }
 
 footer {
@@ -38,4 +40,5 @@ footer {
   background-color: blueviolet;
   align-items: center;
   text-align: center;
+  font-family: "Roboto", sans-serif;
 }
