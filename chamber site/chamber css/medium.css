@@ -1,32 +1,62 @@
-/*nav{ background-color: #eee;}
 
-nav ul {
-    list-style-type: none;
+
+/*......*/
+* {
+    margin: 0;
     padding: 0;
-    -ms-wrap-margin: 0; 
-}
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    align-items: center;
+  }
+  
+  header,
+  main,
+  footer {
+    max-width: 800px;
+    margin: 0 auto;
+    align-items: center;
+    ;
+  }
+  
+  header {
+    margin: 1em auto;
+    border: 2px solid #ccc;
+    padding: 1em;
+    background-color:#c94277;
+    display: grid;
+    grid-template-columns: 300px 1fr auto;
+    grid-template-rows: auto;
+    align-items: center;
+  }
+  header nav ul{grid-column: 2/3;
 
-nav ul li a {
-    display: block;
-    padding: .8rem 2vw;
-    text-decoration: none;
-    color: #333;
-    border-top: 1px solid rgb(0, 0, 5);
-    font-size: .8rem;
+  }
+ 
+  main {
+    margin: 1em auto;
+    border: 2px solid #ccc;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+  }
+  main section  :nth-child(1){
+    margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0 1rem;
+	background-color: beige;
+  }
 
-}
-
-nav ul li.active a{
-    background-color: rgba(0, 0, 0, 0.2);
-    color: #fff; 
-} 
-
-nav ul li a:hover{
-    background-color: rgba(0, 0, 0, 0.4);
-
-} 
-nav ul {
-    display: none;
-
-}
-nav ul.open{display: block;
+  footer {
+    margin: 1em auto;
+    border: 2px solid #ccc;
+    background-color: #c94277;
+    align-items: center;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    padding: 1em;
+  }
+  
