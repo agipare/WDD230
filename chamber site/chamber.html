@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <link rel="stylesheet" href="chamber css/small.css" />
     <link rel="stylesheet" href="chamber css/medium.css" />
     <link rel="stylesheet" href="chamber css/large.css" />
+    <link rel = " shortcut icon" href="images/fave icon"
     <title>Our Bolgatanga chamber</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,57 +23,73 @@
   </head>
   <body>
     <header>
-      <section>
-        <picture><img src="pictures/logo.png" alt="site logo for chamber site"></picture>
-        <h2>Our <strong>Bolgatanga</strong> Chamber</h2>
+        <picture 
+          ><img
+            class="logo-img"
+            src="pictures/logo.png"
+            alt="site logo for chamber site"
+        /></picture>
+        <section class="headings">
+          <h2>Our <q>Bolgatanga</q> Chamber</h2>
+        </section>
+      
         <div id="socials">
           <a href="https://twitter.com" target="blank"
-          ><img
-            src="https://cdn.glitch.global/11c69a94-0fb8-48b9-b1bc-625b8a3d878b/twitter%20logo.png?v=1643494627663"
-            alt="twitter icon"
-        /></a>
-        <a href="http://www.youtube.com" target="blank"
-          ><img
-            src="https://cdn.glitch.global/11c69a94-0fb8-48b9-b1bc-625b8a3d878b/youtube%20logo.png?v=1643494635046"
-            alt="youtube icon"
-        /></a>
+            ><img
+              src="https://cdn.glitch.global/11c69a94-0fb8-48b9-b1bc-625b8a3d878b/twitter%20logo.png?v=1643494627663"
+              alt="twitter icon"
+          /></a>
+          <a href="http://www.youtube.com" target="blank"
+            ><img
+              src="https://cdn.glitch.global/11c69a94-0fb8-48b9-b1bc-625b8a3d878b/youtube%20logo.png?v=1643494635046"
+              alt="youtube icon"
+          /></a>
         </div>
-        <nav>
-          <ul class="navigation">
-              <li><a class="ham" href="#"></a></li>
-              <li><a href="chamber.html">Home</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Projects</a></li>
-          </ul>
-          <div class="date"></div>
-          <aside></aside>
+      <button class="hamburger">
+          <span>&#9776;Menu</span><span>X</span>
+      </button>
+      <nav>
+        <ul class="navigation">
+          <li><a href="chamber.html">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+        </ul>
       </nav>
-    </section>
+      <div class="date">
+        <span></span>
+      </div>
     </header>
     <main>
-       <div><p>What we do</p></div>
-       <div><h2>goals and achievments</h2></div>
-       <div><h2>Aids and offers</h2></div>
-       <div><h2>Call to action</h2></div>
-     
+      <section class="one">
+        <div><h2>What we do</h2></div>
+      </section>
+      <section>
+        <div><h2>goals and achievments</h2></div>
+      </section>
+      <section class="two">
+        <div><h2>Aids and offers</h2></div>
+      </section>
+      <section class="three">
+        <div><h2>Call to action</h2></div>
+      </section>
     </main>
     <footer>
-      <section>
-        <div>
-          <picture><img src="pictures/logo.png" alt=""></picture>
+        <div class="down">
+          <picture><img src="pictures/logo.png" alt="" /></picture>
           <h2>Our <strong>Bolgatanga</strong> Chamber</h2>
           <p>Number 2, Doctor Johnson Street, Bolgatanga</p>
-          <div><p><strong>Info@ourbolgatangachamber.com</strong></p>
-          <p>+(233) 593104715</p>
-          <a href="http://"> Location</a>
+          <div id="contact-info">
+            <p><strong>Info@ourbolgatangachamber.com</strong></p>
+            <p>+(233) 593104715</p>
+            <a href="http://"> Location <Map>">Map</Map></a>
           </div>
         </div>
-
-        &COPY;2022 Our Bolgatanga Chamber| Agipare Emmanuel | WDD 230 Projects | Last Updated:<span id="lastupdate"></span>
+        <section class="last">
+        &COPY;2022 Our Bolgatanga Chamber| Agipare Emmanuel | WDD 230 Projects |
+        Last Updated:<span id="lastupdate"></span>
       </section>
     </footer>
-    <script src="js/update.js"></script>
+    <script src="site scripts/write.js"></script>
   </body>
 </html>
-
