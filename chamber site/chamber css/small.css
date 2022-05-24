@@ -1,68 +1,305 @@
-/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+/* new */
+
+
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
-/*----------- apply a natural box layout model to all elements --------------*/
+
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-/* Small/Phone View ***************/
-nav {
-	margin: 0 auto;
-	max-width: 760px;
-	background-color: tomato;
-}
-.navigation {
-	list-style: none;
+
+* {
+	margin: 0;
 	padding: 0;
-}
-.navigation li:first-child {
-	display: block;
-}
-.navigation li {
-	display: none;
-}
-.navigation a {
-	display: block;
-	padding: 0.75rem;
-	text-align: left;
-	text-decoration: none;
-	color: black;
-	font-weight: 700;
-	transition: 0.5s;
-	font-size: clamp(1rem, 2vmin, 1.5rem);
+	box-sizing: border-box;
 }
 
-.navigation a.ham::before {
-	content: "🍔 ";
+/* Body Sizing */
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
 }
 
-.navigation a:hover {
-	color: white;
-	background-color: black;
+p {
+    font-family: roboto ;
 }
 
-/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
-  <ul class="navigation responsive">
-*/
-.responsive li {
-	display: block;
+/* Header Styling */
+
+header,
+footer {
+	background-color: #C94277;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
 }
 
-.responsive a.ham::before {
-	content: "❌ ";
+header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 70px 50px 1fr;
+    align-items: center;
+    justify-items: center;
 }
 
-/* Media Query for medium+ views */
-@media only screen and (min-width: 32.5em) {
-	.navigation {
-		display: flex;
-	}
-	.navigation li {
-		display: block; /* change state in small view */
-		flex: 1 1 auto;
-	}
-	.navigation a {
-		text-align: center;
-	}
-	.navigation li:first-child {
-		display: none;
-	}
+h1, h2, h3, h4 {
+    font-family:  sans-serif;
 }
 
+.logo-img  {
+    width: 75px;
+}
+
+.header-title {
+    font-size: 10px;
+    width: 160px;
+    padding: 5px;
+}
+
+picture .logo-img, .down picture img {
+    border-radius: 50%;
+}
+
+.socials {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.socials a {
+    text-decoration: none;
+}
+
+.socials img {
+    width: 40px;
+}
+
+/* Nav, Button, and Links */
+
+nav {
+    background-color: burlywood;
+    grid-column: 1/5;
+    width: 100%;;
+    align-self: center;
+}
+
+nav:active {
+    border: 1px solid black;
+}
+
+nav ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    /*border: 1px solid gainsboro;*/
+    align-self: center;
+}
+
+nav ul li {
+    list-style: none;
+    text-align: center;
+    padding-top: 6px;
+    flex: 1 1 auto;
+    height: 50px;
+    font-family: sans-serif;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    height: 45px;
+    display: block;
+    text-align: center;
+}
+
+nav ul li:hover {
+    background-color: blueviolet;
+    flex: 1 1 auto;
+}
+
+button {
+    padding: 0;
+    width: 100%;
+    height: 40%;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #555;
+}
+
+nav ul {display:none;}
+nav ul.open {display:block;}
+
+button .hamburger  span:nth-child(1) {display: block;}
+button .hamburger span:nth-child(2) {display: none;}
+
+button .open span:nth-child(1) {display: none;}
+button .open span:nth-child(2) {display: block;}
+
+/* Date */
+
+.date {
+    grid-row: 2/3;
+    grid-column: 1/5;
+    border: 1px solid black;
+    width: 90%;
+    text-align: center;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+	background-color: beige;
+}
+
+/* Styling Banner */
+
+#banner {
+    display: none;
+    background-color: lightgray;
+    border: 1px solid rgba(0,0,0,0.3);
+    margin-top: 10px;
+    text-align: center;
+}
+
+/*Styling Main*/
+
+main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr 220px 1fr;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    min-height: 150px;
+    background-color: whitesmoke;
+}
+
+main p {
+    padding: 10px;
+    text-align: center;
+}
+
+main h2, h4 {
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+main div ,section{
+    background-color: blueviolet;
+    border: 1px solid rgba(0,0,0,0.3);
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 7px blue;;
+}
+
+.banner {
+    background-color: transparent;
+    border: none;
+}
+
+.banner img {
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.banner h1 {
+    position: relative;
+    top: -250px;
+    width: 100%;
+    margin: 0 auto;
+    width: 300px;
+    height: 50px;
+    background-color: rgba(0,0,0,0.3);
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+}
+
+.banner button {
+    display: block;
+    background-color: lightblue;
+    border-radius: 25px;
+    width: 80%;
+    border: 1px solid rgba(0,0,0,0.3);
+    position: relative;
+    height: 50px;
+    top: -90px;
+    left: 180px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.banner button:hover {
+    background-color: #72BDFF;
+}
+
+.join {
+    display: none;
+}
+
+.news {
+    grid-row: 2;
+}
+
+.weather {
+    grid-row: 3;
+    
+}
+
+.spotlight {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    min-height: 500px;
+}
+
+.spotlight div {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 60%;
+}
+
+.spotlight-1 {
+    margin-top: 10px;
+}
+
+.spotlight-3 {
+    display: none;
+}
+
+.spotlight-icon {
+    font-size: 32pt;
+}
+
+/* Footer Styling */
+
+footer {
+    display: flex;
+	align-items: center;
+}
+
+.last {display: none}
+
+footer img {
+    width: 150px;
+}
+
+.down {
+    text-align: center;
+}
+
+.contact-info {
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.contact-info p {
+    padding: 10px;
+}
+
+.last {
+    text-align: center;
+}
