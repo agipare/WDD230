@@ -22,9 +22,9 @@
     />
   </head>
   <body>
-    <header>
-        <picture 
-          ><img
+    <header class="clearfix">
+        <picture>
+          <img
             class="logo-img"
             src="pictures/logo.png"
             alt="site logo for chamber site"
@@ -45,11 +45,11 @@
               alt="youtube icon"
           /></a>
         </div>
-      <button class="hamburger">
-          <span>&#9776;Menu</span><span>X</span>
+      <button id="hamburger">
+          <span>&#9776;Menu</span><span>Close</span>
       </button>
       <nav>
-        <ul class="navigation">
+        <ul id="navigation">
           <li><a href="chamber.html">Home</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Services</a></li>
@@ -60,35 +60,68 @@
         <span></span>
       </div>
     </header>
-    <main>
-      <section class="one">
-        <div><h2>What we do</h2></div>
-      </section>
-      <section>
-        <div><h2>goals and achievments</h2></div>
-      </section>
-      <section class="two">
-        <div><h2>Aids and offers</h2></div>
-      </section>
-      <section class="three">
-        <div><h2>Call to action</h2></div>
-      </section>
+    <main class="clearfix">
+      <div class="banner">
+        <h1>Welcome to Bolgatanga Chamber</h1>
+        <picture>
+          <source media="(min-width:300px )" srcset="pictures/hero300px.png">
+          <source media="(min-width:500px )" srcset="pictures/hero500px.png">
+          <source media="(min-width:800px )" srcset="pictures/hero800px.jpeg">
+          <img src="pictures/hero300px.png" alt="home banner">
+        </picture>
+        <button>Join Bolgatanga Chamber</button>
+      </div>
+      <div id="news">
+        <h2>Hottest News</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eaque accusantium, aut est alias labore earum molestias? A veniam expedita at alias eveniet exercitationem eos qui minus, iste, vero provident.</p>
+      </div>
+      <div id="aids">
+          <h2>Aids and offers</h2>
+          <p>Our chamber site  is a great tool to set your business on top of the market in Bolgatanga,
+            we help you get the best job seekers and promotions in the region. Joining this group chamber is a great idea with benefits.
+          </p>
+      </div>
+      <div class="weather">
+        <h1><a class="weatherwidget-io" href="https://forecast7.com/en/39d96n76d73/york/" data-label_1="YORK" data-label_2="WEATHER" data-days="3" data-theme="original" data-basecolor="#72BDFF" data-highcolor="#ad1303" data-lowcolor="#03062e" data-raincolor="#1b6fe6" >
+          WEATHER</a></h1>
+      </div>
+      <div class="join">
+        <button type="button" id="join-button" onclick="location.href='https// mybolgaonline.com'">Join Us now!</button>
+        <p>Click here and discover greateness, and how to build the best for   your business!</p>
+    </div>
+    <section id="sportlight">
+      <div id="sportlight-1">
+        <h2>Hero</h2>
+        <p>Meet 🤝🏼 with the best and successful men in the region of Bolgatanga! here</p>
+      </div>
+      <div  id="sportlight-2">
+        <h2>Job seekers</h2>
+        <p>Our Bolgatanga chamber has great oppurtunity for all youth in the region who are currently in search for jobs.
+          It is a great start to, start your job search here.   </p>
+      </div>
+      <div class="sportlight-3">
+        <h2>Own a business</h2>
+        <p>this a great platform to on how to start small scale business, in the Bolgatanga. join us and get to meet experienced C.E.O's to help you grow your business. also get free 1 month advertisment.</p>
+      </div>
+    </section>
+
     </main>
     <footer>
-        <div class="down">
+       
           <picture><img src="pictures/logo.png" alt="" /></picture>
-          <h2>Our <strong>Bolgatanga</strong> Chamber</h2>
-          <p>Number 2, Doctor Johnson Street, Bolgatanga</p>
-          <div id="contact-info">
+          <div class="down">
+            <h2>Our <strong>Bolgatanga</strong> Chamber</h2>
+            <p>Number 2, Doctor Johnson Street, Bolgatanga</p>
+          </div>
+          <div id="contact">
             <p><strong>Info@ourbolgatangachamber.com</strong></p>
             <p>+(233) 593104715</p>
             <a href="http://"> Location <Map>">Map</Map></a>
           </div>
-        </div>
         <section class="last">
-        &COPY;2022 Our Bolgatanga Chamber| Agipare Emmanuel | WDD 230 Projects |
-        Last Updated:<span id="lastupdate"></span>
-      </section>
+          &COPY;2022 Our Bolgatanga Chamber| Agipare Emmanuel | WDD 230 Projects| 
+          Last Update:<span id="lastupdate"></span>
+        </section>
     </footer>
     <script src="site scripts/write.js"></script>
   </body>
