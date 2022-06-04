@@ -1,0 +1,18 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+}
+
+picture{display: block;
+    text-shadow: 1em greenyellow;
+   
+}
+
+img{
+    height: 400px;
+    width: 300px;
+    
+}
