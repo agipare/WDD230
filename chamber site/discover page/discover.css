@@ -1,4 +1,41 @@
-img{
+main{
+    display: block;
+    align-content: center;
+}
+
+main section{
+    display: block;
+    align-items: center;
+}
+
+picture img.one {
+    width: 300px;
+    height: 400px;
+    padding: 1em;
+    align-self: center;
+    align-content: center;
+}
+picture img.two {
+    width: 300px;
+    height: 400px;
+    padding: 1em;
+}
+picture img.three {
+    width: 300px;
+    height: 400px;
+    padding: 1em;
+}
+picture img.four {
+    width: 300px;
+    height: 400px;
+    padding: 1em;
+}
+picture img.five{
+    width: 300px;
+    height: 400px;
+    padding: 1em;
+}
+picture img.six {
     width: 300px;
     height: 400px;
     padding: 1em;
