@@ -1,0 +1,77 @@
+body {
+    background-color: rgb(219, 137, 29);
+}
+
+header, main, footer {
+    text-align: center;
+}
+
+
+
+main {
+    box-shadow: 0 0 10px;
+    margin: 10px;
+}
+
+h1 {
+    width: 50%;
+    font-family: 'roboto';
+    font-size: 50px;
+    border-top: 1px solid rgb(10, 10, 107);
+    border-bottom: 1px solid rgb(10, 10, 107);
+    margin: 33px auto;
+}
+
+h2 {
+    border-bottom: 1px solid rgb(53, 51, 51);
+    width: 60%;
+    margin: 10px auto;
+}
+
+p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #fff;
+    font-size: 20px;
+}
+
+p, h2, footer {
+    font-family: 'sans-serif';
+}
+
+div section {
+    padding: 5px;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+div section:nth-child(even){
+    background-color: rgb(202, 36, 202);
+}
+div section:nth-child(odd){
+    background-color: navy;
+}
+
+div section img {
+    box-shadow: 0 0 20px;
+    width: 200px;
+    height: auto;
+}
+
+div section h2 {
+   
+    
+}
+
+div.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+footer {
+    margin: 20px auto;
+    font-size: 24px;
+    border-top: 1px solid rgb(10, 10, 107);
+    border-bottom: 1px solid rgb(10, 10, 107);
+    width: 80%;
+}
