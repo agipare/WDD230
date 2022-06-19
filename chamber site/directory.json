@@ -1,0 +1,74 @@
+{
+    "companies": [
+        {
+            "name": "MyTurn Limited",
+            "address": "26 Bukere Light Ind. Area, Bolgatanga, Ghana",
+            "phone": "+233302268239",
+            "websiteURLs": "https://myturngh.com/",
+            "imageurl": "https://www.ghanayello.com/img/gh/h/1596642255-30-myturn-ltd.png",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "BabaTree Basket Ccompany",
+            "address": "C/O BOLGATANGA POST OFFICE Bolgatanga, Upper East Region Ghana",
+            "phone": "+233593104715",
+            "websiteURLs": "https://babatree.com/",
+            "imageurl": "https://cdn.shopify.com/s/files/1/0884/1664/files/BabaTreeLogo_H_220x.png?v=1591866124",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "Lesken Enterprises Ltd",
+            "address": "Starlet 91 Rd, Bolgatanga, Ghana",
+            "phone": "+233 38 202 2290",
+            "websiteURLs": "https://www.ghanayello.com/company/30576/Lesken_Enterprises_Ltd",
+            "imageurl": "https://cdn.modernghana.com/content__/500/330/xcs2wji77p_854587155_531037.jpg",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "Cassius Mining Limited",
+            "address": "H/No. 4, 9th Street Adjiringanor P. O. Box GP17867 Accra, Ghan",
+            "phone": "+61 (0)407 233 153",
+            "websiteURLs": "https://www.cassiusmining.com/",
+            "imageurl": "https://www.cassiusmining.com/wp-content/uploads/2017/10/Cassius-Mining-Logo-Yellow-PNG-400-1.png",
+            "membershipLevel": "Ssilver"
+        },
+        {
+            "name": "Akayet Hotel",
+            "address": "phone": "+ 233 3820 24680",
+            "websiteURLs": "https://akayethotel.com/",
+            "imageurl": "https://akayethotel.com/wp-content/uploads/2020/08/akayet-straight-logo.png",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "Technoserve",
+            "address": "H/No. 4 Bolgatanga",
+            "phone": "+1 202 785 4515",
+            "websiteURLs": "https://www.technoserve.org/",
+            "imageurl": "https://www.technoserve.org/wp-content/uploads/2021/09/TNS-Logo-RGB_Horizontal_Full-Color.svg",
+            "membershipLevel": "Bronze"
+        },
+        {
+            "name": "Jab Printing Press",
+            "address": "Alabasey, Mabile Rd. , Bolgatanga Bolgatanga, Upper East 0, Ghana",
+            "phone": "0382022369",
+            "websiteURLs": "imageurl": "https://www.gstatic.com/bfe/apps/website/img/h/88093111-pinter-ink-1440.jpg",
+            "membershipLevel": "Bronze"
+        },
+        {
+            "name": "Ex-Tee Electricals Limited",
+            "address": "Commercial St., Opp. NIB , Bolgatanga Bolgatanga, Upper East 0, Ghana",
+            "phone": "382023128",
+            "websiteURLs": "https://directoryghana.com/listing/ex-tee-electricals-3/",
+            "imageurl": "https://99designs-blog.imgix.net/blog/wp-content/uploads/2020/08/attachment_65130545-e1598029674951.png?auto=format&q=60&fit=max&w=930",
+            "membershipLevel": "Ssilver"
+        },
+        {
+            "name": "Goldern Grill",
+            "address": "53 Wales Road, Sheffield S26 6RA England",
+            "phone": "+44 1909 773888",
+            "websiteURLs": "http://www.goldengrillkiveton.co.uk/",
+            "imageurl": "https://media-cdn.tripadvisor.com/media/photo-s/0f/87/10/5e/pizza-kebab-burger.jpg",
+            "membershipLevel": "Gold"
+        }
+    ]
+}
