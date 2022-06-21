@@ -50,6 +50,7 @@ div section:nth-child(even){
 }
 div section:nth-child(odd){
     background-color: navy;
+    color: white;
 }
 
 div section img {
@@ -58,10 +59,7 @@ div section img {
     height: auto;
 }
 
-div section h2 {
-   
-    
-}
+
 
 div.cards {
     display: grid;

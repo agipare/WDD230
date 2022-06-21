@@ -390,3 +390,102 @@ main.joinmain {
     align-content: center;
 }
 
+/******************************Directory styling*************************/
+
+main.directory{margin: 0 auto;
+	border: 1px solid rgb(10, 10, 107);
+	padding: 0.5rem;
+	max-width: 700px;
+	background-color: rgb(219, 137, 29);
+	font-family: 'roboto';
+    display: block
+    ;
+}
+
+.menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(10, 10, 107, );
+	padding: 0.5rem;
+	background-color: #bbb;
+	text-align: center;
+}
+
+.menu button {
+	padding: 1rem;
+}
+
+article,
+section {
+	margin: 0.75rem;
+    border: 1px solid black;
+}
+
+section {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	
+}
+
+article section:nth-child(even){
+    background-color: rgb(202, 36, 202);
+}
+article section:nth-child(odd){
+    background-color: navy;
+    color: white;
+}
+section a {
+    color: white;
+}
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	align-items: center;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: flex;
+	align-items: center;
+}
+
+.grid section {
+	flex-direction: column;
+	text-align: center;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+.list section {
+	flex-direction: row;
+	justify-content: left;
+}
+
+.list section > * {
+	margin: 0 0.5rem;
+	text-align: left;
+}
+
+.list section img {
+	display: none; 
+}
+
+section h3 {
+	font-size: 1.5rem;
+}
+
+section a {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 0.9rem;
+}
+
+img {
+	height: 75px;
+	max-width: 100%; 
+}
+
