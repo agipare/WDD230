@@ -395,7 +395,7 @@ main.joinmain {
 main.directory{margin: 0 auto;
 	border: 1px solid rgb(10, 10, 107);
 	padding: 0.5rem;
-	max-width: 700px;
+	max-width: inherit;
 	background-color: rgb(219, 137, 29);
 	font-family: 'roboto';
     display: block
@@ -406,12 +406,14 @@ main.directory{margin: 0 auto;
 	margin: 1rem auto;
 	border: 1px solid rgba(10, 10, 107, );
 	padding: 0.5rem;
-	background-color: #bbb;
+	background-color: blueviolet;
 	text-align: center;
+    color: white;
 }
 
 .menu button {
 	padding: 1rem;
+    color: white;
 }
 
 article,
