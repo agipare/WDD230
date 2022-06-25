@@ -1,6 +1,6 @@
 // select the elements to manipulate (output to)
 const datefield = document.querySelector(".date");
-const datefieldUK = document.querySelector("#span"); // for european/family history format with day first.
+const datefieldUK = document.querySelector("#lastupdate"); // for european/family history format with day first.
 
 // derive the current date using a date object
 const now = new Date();
@@ -32,20 +32,56 @@ try {
 
 //hamburger
 function toggleMenu() {
-  document.querySelector("#nav").classList.toggle("open");
-  document.querySelector("#button").classList.toggle("open");
+  document.querySelector("#navigation").classList.toggle("open");
+  document.querySelector("#hamburger").classList.toggle("open");
 }
 
-const close = document.querySelector("#button");
+const close = document.querySelector("#hamburger");
 close.onclick = toggleMenu;
 
 
 
 // Weather 
 
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id))
-  {js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+// select HTML elements in the document
+const currentTemp = document.querySelector('#temp');
+const weatherIcon = document.querySelector('#weatherIcon');
+const captionDesc = document.querySelector('figcaption');
+const windspeed = document.querySelector('#windspeed');
+const windchill = document.querySelector('#windchill');
 
+const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=Bolgatanga&appid=594f2dd23e763ee93211dad5ba97fd06&units=imperial`;
+
+async function apiFetch() {
+    try {
+      const response = await fetch(weatherUrl);
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data); // this is for testing the call
+         displayResults(data);
+      } else {
+          throw Error(await response.text());
+      }
+    } catch (error) {
+        console.log(error);
+    }
+  }
+  
+  apiFetch();
+
+  function  displayResults(weatherData) {
+    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+  
+    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+    const desc = weatherData.weather[0].description;
+  
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', desc);
+    captionDesc.textContent = desc;
+
+    windspeed.innerHTML = `<strong>${weatherData.wind.speed}</strong>`;
+  }
+  
 
 
 

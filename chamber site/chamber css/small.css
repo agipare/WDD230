@@ -167,15 +167,14 @@ button .open span:nth-child(2) {display: block;}
 
 /*************************Styling Main*****************************************/
 
-main {
+/**main {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr 1fr 220px 1fr;
     margin-top: 15px;
     margin-bottom: 15px;
-    min-height: 150px;
     background-color: whitesmoke;
-}
+}**/
 
 main p {
     padding: 10px;

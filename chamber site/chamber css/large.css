@@ -38,7 +38,7 @@
         border-right: 1px ;
     }
 
-    button.hamburger {display: none}
+    .hamburger {display: none}
 
     .socials {
         grid-column: 5;
