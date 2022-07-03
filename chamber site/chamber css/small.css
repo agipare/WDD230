@@ -85,7 +85,7 @@ div.socials {
 
 
 .socials a img {
-    max-width:20px ;
+    width:20px ;
     border-radius: 50%;
 }
 
@@ -178,14 +178,12 @@ button.open span:nth-child(2) {display: block;}
 
 /*************************Styling Main*****************************************/
 
-/**main {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr 1fr 220px 1fr;
+main {
+    
     margin-top: 15px;
     margin-bottom: 15px;
     background-color: whitesmoke;
-}**/
+}
 
 main p {
     padding: 10px;
@@ -209,61 +207,51 @@ main div ,section{
 .banner {
     background-color: transparent;
     border: none;
+    align-content: center;
 }
 
 .banner img {
-    max-width: 100%;
-    max-height: fit-content;
-
-    position: relative;
-}
-
-.banner h1 {
-    position:relative;
-    top: -250px;
     width: 100%;
-    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    
+}
+.banner h1 {
+    top: -280px;
+    left: -100px;
+    position:relative;
+    width: 100%;
+    margin: 20px auto;
     width: 300px;
     height: 50px;
-    background-color: rgba(0,0,0,0.3);
+    background-color: transparent;
     text-align: center;
-    color: white;
+    color: royalblue;
     padding-top: 5px;
 }
 
+
 .banner button {
-    display: block;
     background-color: lightblue;
-    border-radius: 25px;
-    width: 80%;
+    width: 50%;
     border: 1px solid rgba(0,0,0,0.3);
     position: relative;
     height: 50px;
-    top: -90px;
-    left: 180px;
+    top: -200px;
+    left: 250px;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    font-size: 24px;
+    font-size: 16px;
     cursor: pointer;
+    border-radius: 50%;
 }
 
 .banner button:hover {
     background-color: #72BDFF;
 }
 
-.join {
+#join {
     display: none;
-}
-
-.news {
-    grid-row: 2;
-}
-
-.weather {
-    grid-row: 3;
-    
-
-    
 }
 
  main div.weather h1{
@@ -272,8 +260,6 @@ main div ,section{
 }
 
 .spotlight {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 0;
     min-height: 500px;
 }
@@ -284,13 +270,7 @@ main div ,section{
     height: 60%;
 }
 
-.spotlight-1 {
-    margin-top: 10px;
-}
 
-.spotlight-3 {
-    display: none;
-}
 
 .spotlight-icon {
     font-size: 32pt;
@@ -353,8 +333,15 @@ form label.top, form div{
     color: palevioletred;
     font-size: 0.8rem;
 }
-form div{
-    color: white;
+ #level{
+    background-color: transparent;
+    align-items: center;
+    box-shadow: none;
+    border: 0px;
+ }
+div h2{
+    align-items: center;
+    color: black;
     padding-top: 1.5rem;
 }
 form label.top input, form label.top select{
@@ -413,7 +400,7 @@ main.directory{margin: 0 auto;
     ;
 }
 
-.menu {
+div.menu {
 	margin: 1rem auto;
 	border: 1px solid rgba(10, 10, 107, );
 	padding: 0.5rem;
@@ -422,7 +409,7 @@ main.directory{margin: 0 auto;
     color: white;
 }
 
-.menu button {
+div.menu button {
 	padding: 1rem;
     color: white;
 }
@@ -449,42 +436,41 @@ article section:nth-child(odd){
 section a {
     color: white;
 }
-.grid {
+#grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	align-items: center;
 }
-
-.list {
+#list {
 	display: flex;
 	flex-direction: column;
 }
 
-.list section {
+#list section {
 	display: flex;
 	align-items: center;
 }
 
-.grid section {
+#grid section {
 	flex-direction: column;
 	text-align: center;
 }
 
-.grid section > * {
+#grid section > * {
 	margin: 0.1rem;
 }
 
-.list section {
+#list section {
 	flex-direction: row;
 	justify-content: left;
 }
 
-.list section > * {
+#list section > * {
 	margin: 0 0.5rem;
 	text-align: left;
 }
 
-.list section img {
+#list section img {
 	display: none; 
 }
 
@@ -501,4 +487,21 @@ img {
 	height: 75px;
 	max-width: 100%; 
 }
+/**********************styling contact page*******************/
 
+main#contact-form{
+    display: block;
+
+}
+section#contact-form{
+    background-color: #999;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+section#contact-form fieldset{
+    padding-right: 20px;
+}
+section#contact-info{
+    background-color: beige;
+}

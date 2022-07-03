@@ -56,7 +56,7 @@
           <li><a href="discover page/discover.html">Discover</a></li>
           <li><a href="join.html">Join</a></li>
           <li><a href="directory.html">Directory</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">contact</a></li>
         </ul>
       </nav>
     </div>
@@ -64,44 +64,39 @@
         <span></span>
       </div>
     </header>
-    <main class="joinmain">
-      <!--------------------------JOIN FORM -------------------------------->
-      <h1>JOIN OUR BOLGATANGA CHAMBER</h1>
-      <form action="thannkyou.html" method="get">
-          <fieldset>
-              <legend>Personal Information</legend>
-              <label class="top"> First Name*<input  type="text" name="fname" required></label>
-              <label class="top"> Last Name*<input  type="text" name="lname" required></label>
-              <label class="top"> Title <input  type="text" name="title" placeholder="Business Position Title " pattern="[A-Z/d/s/-] {7}"></label>
-              <label class="top"> Email*<input  type="email" name="email" placeholder="hello@gmail.com" required></label>
-              <label class="top">Cell Phone Number*<input  type="tel" name="phone" placeholder="(+000)1234567890" required></label>
-              
-          </fieldset>
-          <fieldset>
-              <legend>Business Information</legend>
-              <label for="">Business Name* <input type="title text"></label>
-              
-              
-              <div id="level"> <h2>Membership Level</h2></div>
-              <label class="sbs"><input type="radio" name="member level" id="" value="NP member"> NP Membership(non-profit organisation)</label>
-              <label class="sbs"><input type="radio" name="member level" id="" value="bronze">Bronze Membership</label>
-              <label class="sbs"><input type="radio" name="member level" id="" value="silver"> Silver Membership</label>
-              <label class="sbs"><input type="radio" name="member level" id="" value="gold"> Gold Membership</label>
-              
-             
-              <label class="top">Business Discription <textarea name="discription" id="" cols="30" rows="9"></textarea></label>
-
-
-          </fieldset>
-          <label for=""><input type="hidden" id="date" name="date" value="CurrentTime"> </label>
-          <input type="hidden" id="time" name="time" value="CurrentDate">
-
-          <input type="submit" value="Join Bolgatanga Chamber" class="submitBtn">
-
-      </form>
-
-      
-
+    <main id="contact-form">
+        <h2 class="directory_h2">Contact Us</h2>
+        <section id="contact-form">
+            <form method="get" action="question-sent.html">
+                <fieldset>
+                    <h2>Contact Form</h2>
+                    <label>Name* <input type="text" name="name" required></label>
+                    <label>Email* <input type="email" name="email" required></label>
+                    <label>Questions* <textarea name="question" cols="5" rows="5"></textarea></label>
+                </fieldset>
+                <input type="submit" value="Submit Question" id="questionBtn">
+            </form>
+        </section>
+        <section id="contact-info">
+            <h2>Contact information</h2>
+            <h3>Email</h3>
+            <p>info@ourbolgatangachamber.com</p>
+            <h3>Phone</h3>
+            <p>+(233) 0593104715</p>
+            <h3>Social Media</h3>
+            <p><a href="https//:facebook.com" target="_blank"><img
+                src="pictures/fb_icon.webp"
+                alt="facebook icon"
+            />ourbolgatangachamber</a></p>
+            <p><a href="https://twitter.com" target="blank"
+                ><img
+                  src="pictures/twitter_icon.webp"
+                  alt="twitter icon"
+              /></a></p>
+            <h3>Week Days</h3>
+            <p>From Monday to Friday</p>
+            <p>9:00am - 4:00pm</p>
+        </section>
     </main>
     <footer>
        
