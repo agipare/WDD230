@@ -130,3 +130,6 @@ async function apiFetch() {
       document.querySelector('div.cards').appendChild(card);
   
   };
+
+  //write code for directory page.html//
+  

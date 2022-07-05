@@ -400,7 +400,7 @@ main.directory{margin: 0 auto;
     ;
 }
 
-div.menu {
+.menu {
 	margin: 1rem auto;
 	border: 1px solid rgba(10, 10, 107, );
 	padding: 0.5rem;
@@ -409,9 +409,13 @@ div.menu {
     color: white;
 }
 
-div.menu button {
+button#grid {
 	padding: 1rem;
-    color: white;
+    color: black;
+}
+button#list {
+	padding: 1rem;
+    color: black;
 }
 
 article,
@@ -436,41 +440,40 @@ article section:nth-child(odd){
 section a {
     color: white;
 }
-#grid {
-	display: grid;
+.grid {display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	align-items: center;
 }
-#list {
-	display: flex;
+
+button#list {
 	flex-direction: column;
 }
 
-#list section {
+.list section {
 	display: flex;
 	align-items: center;
 }
 
-#grid section {
+.grid section {
 	flex-direction: column;
 	text-align: center;
 }
 
-#grid section > * {
+.grid section > * {
 	margin: 0.1rem;
 }
 
-#list section {
+.list section {
 	flex-direction: row;
 	justify-content: left;
 }
 
-#list section > * {
+.list section > * {
 	margin: 0 0.5rem;
 	text-align: left;
 }
 
-#list section img {
+.list section img {
 	display: none; 
 }
 
@@ -504,4 +507,23 @@ section#contact-form fieldset{
 }
 section#contact-info{
     background-color: beige;
+}
+
+/*******************************weather*******************/
+.weather  {
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px 110px 50px 30px 30px;
+    width: 245px;
+    justify-self: center;
+    border-radius: 5px;
+    height: fit-content;
+}
+.weather h1{
+    grid-column: 1/3;
+    justify-self: center;
+    text-shadow: 0 0 30px #fff;
+    font-size: 22px;
 }
